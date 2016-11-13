@@ -1,10 +1,8 @@
-% TODO: Q2E
-% TODO: Q2F
-
 \documentclass[a4paper, 12pt]{article}
 
 \usepackage[english]{babel}
 \usepackage{float}
+\usepackage[margin=0.8in]{geometry}
 
 \begin{document}
 %%%%%%%%%% Title %%%%%%%%%%%%%%%%%%%%
@@ -133,4 +131,15 @@ to try to capture the sources that have key information where I can start findin
 data. The second search string was to get hits on the use of SLAM in other
 applications than self driving vehicles and possible some results on 
 experimantal algorithms that have not yet been widely implemented.
+\subsection*{E}
+Yes, this can be productive. Searhcing for example abstracts for keywords can be
+useful to catch instances where the desired data has not been indexed in free text
+searches. For example, using this search string in the database generates many hits:
+\linebreak
+\textbf{(``Abstract'': (slam OR localization OR mapping) AND (sensor OR hardware))}
+\subsection*{F}
+Using the data from the searches, several specific sensor technologies were found, e.g LIDAR and RADAR. 
+The effectiveness of these can be further investigated by improving the search 
+string to look for these specifically, i.e. \linebreak
+\textbf{(slam OR mapping OR localization OR sensing OR modeling) AND (LIDAR or RADAR) AND (car OR vehicle OR robot)}
 \end{document}
