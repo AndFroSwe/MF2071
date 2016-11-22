@@ -2,39 +2,30 @@
 
 \usepackage[english]{babel}
 \usepackage[numbers]{natbib}
+\usepackage{amsmath}
 
 %% Create the title
 \title{MF2071 Literature study}
-\author{Andreas Fr\"{o}derberg}
+\author{Andreas Fr\"{o}derberg, Adam Lang}
 \begin{document}
 \maketitle
 \pagebreak
 \section*{Introduction}
-The research question given by the company was \textit{What are the pros and 
-    cons of different SLAM algorithms which are suitable for autonomous vehicles?}.
-In the thesis description, there is a stated desire for a comprehensible 
-comparison between different SLAM algorithms, both on the performance of the 
-algorithm and the price of the needed hardware. 
+\input{introduction.tex}
 
-\section{Search Method}
-Since there is a variety of suitable SLAM methods that could be used in
-autonomous cars there is a need to define the scope of this quantity. The first
-real important task would be to try to find the relevant methods and categorize
-them. Once these have been categorized they would need to be researched further
-one by one to get a sufficient amount of information about them each of them.
-Using multiple sources will help in getting an as complete picture of the
-method as possible.
+\section*{Research question refinement}
+\input{researchQuestion.tex}
+
+\section*{Search Method}
+\input{searchMethod.tex}
+
+\section*{Literature review and motivation}
+\input{literatureReview.tex}
 
 %% Search iteration process described here
 \pagebreak
 \section*{Search iteration}
-
-The initial search string used is,
-\begin{align}
-    &\text{(slam OR mapping OR localization OR sensing OR modeling)} \nonumber \\ 
-    &\text{AND (car OR vehicle OR agent OR uav OR robot)} \\
-    &\text{AND (hardware OR sensor OR processor OR input OR data)} \nonumber
-\end{align}
+\input{searchIteration.tex}
 
 %% Bibliography starts here
 \pagebreak
